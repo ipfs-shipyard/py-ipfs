@@ -1,19 +1,5 @@
-Welcome to py-ipfs's documentation!
-===================================
+``py-ipfs``
+===========
 
-For now, please refer to https://ipfs.io
-
-Contents:
-
-.. toctree::
-   :maxdepth: 2
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+Python implementation of IPFS. Work has yet to begin. For now, please refer to
+https://ipfs.io
