@@ -1,0 +1,1 @@
+Search.setIndex({envversion:46,filenames:["index"],objects:{},objnames:{},objtypes:{},terms:{begin:0,content:[],http:0,implement:0,index:[],modul:[],now:0,page:[],pleas:0,python:0,refer:0,search:[],work:0,yet:0},titles:["<code class=\"docutils literal\"><span class=\"pre\">py-ipfs</span></code>"],titleterms:{document:[],indic:[],ipf:0,tabl:[],welcom:[]}})
