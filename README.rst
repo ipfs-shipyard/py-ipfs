@@ -1,4 +1,3 @@
-
 .. image::  https://camo.githubusercontent.com/9d6d53354cfd9a368e45cf099ef7922634b6427b/687474703a2f2f697066732e696f2f7374796c65732f696d672f697066732d6c6f676f2d77686974652e706e67
 
 ##########
@@ -13,4 +12,10 @@ IPFS could become a new major subsystem of the internet. If built right, it coul
 
 Take a look at the main repo_.
 
-.. _repo: http://https://github.com/ipfs/ipfs
+############
+Organization
+############
+
+This repository contains the Python package `ipns`, which contains the subpackages `ipns.block`, `ipns.merkledag`, `ipfs.naming`, and `ipfs.routing`, which function as laid out in the main IPFS repo_.
+
+.. _repo: http://github.com/ipfs/ipfs
