@@ -1,11 +1,12 @@
-.. image::  https://camo.githubusercontent.com/9d6d53354cfd9a368e45cf099ef7922634b6427b/687474703a2f2f697066732e696f2f7374796c65732f696d672f697066732d6c6f676f2d77686974652e706e67
+.. image::  ipfs.png
 
-##########
-Py-IPFS
-##########
+#######
+py-ipfs
+#######
 
 Python implementation of IPFS, the InterPlanetary File System. Not even
-remotely done yet - check out Issue #1 to join the project.
+remotely done yet - check out [#1](https://github.com/ipfs/py-ipfs/issues/1) to
+join the project.
 
 IPFS is a distributed file system that seeks to connect all computing devices
 with the same system of files. In some ways, this is similar to the original
@@ -22,8 +23,19 @@ Take a look at the main repo_.
 Organization
 ############
 
-This repository contains the Python package `ipns`, which contains the
-subpackages `ipns.block`, `ipns.merkledag`, `ipfs.naming`, and `ipfs.routing`,
-which function as laid out in the main IPFS repo_.
+This repository contains the Python package `ipfs`, which contains the
+subpackages `block`, `merkledag`, `naming`, and `routing`, which function as
+laid out in the main IPFS repo_.
 
 .. _repo: http://github.com/ipfs/ipfs
+
+The repo roughly looks like this:
+
+```
+ipfs
+├─ block
+├─ merkledag
+├─ naming
+├─ network
+└─ routing
+```
