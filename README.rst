@@ -30,13 +30,11 @@ laid out in the main IPFS repo_.
 
 .. _repo: http://github.com/ipfs/ipfs
 
-The repo roughly looks like this:
-
-```
-ipfs
-├─ block
-├─ merkledag
-├─ naming
-├─ network
-└─ routing
-```
+The repo roughly looks like this::
+    
+    ipfs
+    ├─ block
+    ├─ merkledag
+    ├─ naming
+    ├─ network
+    └─ routing
