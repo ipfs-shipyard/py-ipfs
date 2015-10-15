@@ -5,8 +5,9 @@ py-ipfs
 #######
 
 Python implementation of IPFS, the InterPlanetary File System. Not even
-remotely done yet - check out [#1](https://github.com/ipfs/py-ipfs/issues/1) to
-join the project.
+remotely done yet - check out `#1`__ to join the project.
+
+.. __: https://github.com/ipfs/py-ipfs/issues/1
 
 IPFS is a distributed file system that seeks to connect all computing devices
 with the same system of files. In some ways, this is similar to the original
