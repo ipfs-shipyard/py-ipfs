@@ -1,6 +1,10 @@
 .. image::  ipfs.png
 
 #######
+
+.. image:: https://badges.gitter.im/Join%20Chat.svg
+   :alt: Join the chat at https://gitter.im/ipfs/py-ipfs
+   :target: https://gitter.im/ipfs/py-ipfs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
 py-ipfs
 #######
 
