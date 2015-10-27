@@ -1,0 +1,3 @@
+pyblake2==0.9.3
+pysha3==0.3
+-e git://github.com/JulienPalard/multihash.git@20ab39b#egg=multihash=
