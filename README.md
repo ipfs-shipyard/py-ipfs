@@ -19,15 +19,11 @@ IPFS could become a new major subsystem of the internet. If built right, it
 could complement or replace HTTP. It could complement or replace even more. It
 sounds crazy. It *is* crazy.
 
-Take a look at the main repo_.
-
 # Organization
 
 This repository contains the Python package `ipfs`, which contains the
 subpackages `block`, `merkledag`, `naming`, and `routing`, which function as
-laid out in the main IPFS repo_.
-
-.. _repo: http://github.com/ipfs/ipfs
+laid out in [the main IPFS repo](http://github.com/ipfs/ipfs)
 
 The repo roughly looks like this::
     
@@ -43,10 +39,11 @@ The repo roughly looks like this::
 IPFS implementation in Python is a work in progress. As such, there's a few things you can do right now to help out:
 
   * Go through the modules below and **check out existing issues**. This would be especially useful for modules in active development. Some knowledge of IPFS may be required, as well as the infrasture behind it - for instance, you may need to read up on p2p and more complex operations like muxing to be able to help technically.
-  * **Perform code reviews**. Most of this has been developed by @diasdavid, which means that more eyes will help a) speed the project along b) ensure quality and c) reduce possible future bugs.
-  * Take a look at go-ipfs and some of the planning repositories or issues: for instance, the libp2p spec [here](https://github.com/ipfs/specs/pull/19). Contributions here that would be most helpful are **top-level comments** about how it should look based on our understanding. Again, the more eyes the better.
+  * **Perform code reviews**. More eyes will help a) speed the project along b) ensure quality and c) reduce possible future bugs.
+  * Take a look at both go-ipfs and js-ipfs (which we intend to follow to a point), and also at some of the planning repositories or issues: for instance, the libp2p spec [here](https://github.com/ipfs/specs/pull/19). Contributions here that would be most helpful are **top-level comments** about how it should look based on our understanding. Again, the more eyes the better.
   * **Add tests**. There can never be enough tests.
   * **Contribute to the [FAQ repository](https://github.com/ipfs/faq/issues)** with any questions you have about IPFS or any of the relevant technology. A good example would be asking, 'What is a merkledag tree?'. If you don't know a term, odds are, someone else doesn't either. Eventually, we should have a good understanding of where we need to improve communications and teaching together to make IPFS and IPN better.
+  * TODO: write our own CONTRIBUTE.md similar to [IPFS's](https://github.com/ipfs/ipfs/blob/master/CONTRIBUTE.md) and once we know what we're doing and who's doing it. 
 
 # Usage
 
@@ -54,7 +51,7 @@ IPFS implementation in Python is a work in progress. As such, there's a few thin
 
 # Roadmap
 
-Note: this has been lifted wholesale from [py-ipfs](https://github.com/ipfs/py-ipfs) and only lightly edited. As such, ot may still contain inconsistencies until further editing.
+Note: this has been lifted wholesale from [js-ipfs](https://github.com/diasdavid/js-ipfs) and only lightly edited. As such, ot may still contain inconsistencies until further editing.
 
 TODO:
 
@@ -66,45 +63,56 @@ This is the roadmap according to the JS implementation. It has `Peer Routing` in
 
 - Block
 - MerkleDAG
-  - [ ] MerkleDAG Python implementation (needs IPLD).
-    - [ ] [py-ipld]. No spec yet. [Go Impl.](https://github.com/ipfs/go-ipld) [JS Impl.](https://github.com/diasdavid/js-ipld)
-    - [ ] [py-merkledag-store] No spec yet.[Go Impl](https://github.com/ipfs/go-ipfs/blob/master/merkledag/merkledag.go) [JS Impl](https://github.com/diasdavid/js-merkledag-store).
+    - [ ] MerkleDAG Python implementation (needs IPLD).
+        - [ ] [py-merkledag-store] No spec yet. 
+        - [Go Impl](https://github.com/ipfs/go-ipfs/blob/master/merkledag/merkledag.go)
+        - [JS Impl](https://github.com/diasdavid/js-merkledag-store).
 - Network
-  - [ ] The libp2p-website [is the spec](https://github.com/diasdavid/libp2p-website).
-  - [ ] [py-libp2p](https://github.com/ipfs/py-ipfs/py-libp2p) _(the entry point)_.
-    - Peer Routing
-      - [ ] [py-libp2p-kad-routing][JS Impl.](https://github.com/diasdavid/js-libp2p-kad-routing). [JS discussion issue](https://github.com/ipfs/js-ipfs/issues/18).
-        - discovery mechanisms: listed separately because they have separate discussion issues in the JS repo, which might be relevant.
-          - [ ] py-libp2p-mdns-discovery [JS Impl](https://github.com/diasdavid/js-libp2p-mdns-discovery) _mDNS-discovery_. [JS discussion issue](https://github.com/ipfs/js-ipfs/issues/19).
-          - [ ] py-libp2p-random-walk[JS Impl](https://github.com/diasdavid/js-libp2p-random-walk). [JS discussion issue](https://github.com/ipfs/js-ipfs/issues/20).
-          - [ ] py-libp2p-railing[JS Impl](https://github.com/diasdavid/js-libp2p-railing) _Bootstrap-list_. [JS discussion issue](https://github.com/ipfs/js-ipfs/issues/21).
-      - [ ] mDNS-routing
-    - [ ] Swarm.
-      - Entry point, for now let's call it py-libp2p-swarm. [JS Impl](https://github.com/diasdavid/js-libp2p-swarm). [JS discussion issue](https://github.com/ipfs/js-ipfs/issues/22).
-      - [ ] Identify Protocol [JS implementation](https://github.com/diasdavid/js-libp2p-swarm/tree/master/src/identify).
-      - [ ] py-ipfs-ping [JS Impl](https://github.com/diasdavid/js-ipfs-ping).
-      - Transports: Links to JS impementations probably not needed if we go with Curio, but there's always time to delete.
-        - [ ] libp2p-tcp [JS Impl](https://github.com/diasdavid/js-libp2p-tcp)
-        - [ ] libp2p-udp [JS Impl](https://github.com/diasdavid/js-libp2p-udp)
-        - [ ] libp2p-udt [JS Impl](https://github.com/diasdavid/js-libp2p-udt)
-        - [ ] libp2p-utp [JS Impl](https://github.com/diasdavid/js-libp2p-utp)
-        - [ ] libp2p-webrtc
-        - [ ] libp2p-cjdns
-      - Upgrades
-        - [ ] libp2p-tls
-      - Stream Muxing
-        - [ ] py-spdy-stream-muxer [JS Impl](https://github.com/diasdavid/js-spdy-stream-muxer) _stream muxer_. [JS Discussion issue](https://github.com/ipfs/js-ipfs/issues/23).
-        - [ ] libp2p-spdy [JS Impl](https://github.com/diasdavid/js-libp2p-spdy/blob/master/src/index.js) _stream muxer upgrade_
-      - Protocol Muxing
-        - [ ] py-multistream [JS Impl](https://github.com/diasdavid/js-multistream) _protocol muxer_. [JS Discussion issue](https://github.com/ipfs/js-ipfs/issues/24).
-    - [ ] Distributed Record Store. [JS Discussion issue](https://github.com/ipfs/js-ipfs/issues/25).
-      - [ ] py-libp2p-record [JS Impl](https://github.com/diasdavid/js-libp2p-record) _record (needs MerkleDAG node)_.
-      - [ ] py-libp2p-distributed-record-store [JS Impl](https://github.com/diasdavid/js-libp2p-distributed-record-store).
-      - [ ] py-libp2p-kad-record-store [JS Impl](https://github.com/diasdavid/js-libp2p-kad-record-store) _implements abstract record store_.
+    - [ ] The libp2p-website [is the spec](https://github.com/diasdavid/libp2p-website), but for now the place to go is the [roadmap readme](https://github.com/diasdavid/go-libp2p/blob/docs/roadmap/README.md) in the go-libp2p docs.
+    - [ ] [py-libp2p](https://github.com/ipfs/py-ipfs/py-libp2p) _(the entry point)_.
+        - Peer Routing
+            - [ ] mDNS-routing
+            - [ ] [py-libp2p-kad-routing][JS Impl.](https://github.com/diasdavid/js-libp2p-kad-routing). [JS discussion issue](https://github.com/ipfs/js-ipfs/issues/18).
+        - Discovery: listed separately because they have separate discussion issues in the JS repo, which might be relevant.
+            - [ ] py-libp2p-mdns-discovery [JS Impl](https://github.com/diasdavid/js-libp2p-mdns-discovery) _mDNS-discovery_. [JS discussion issue](https://github.com/ipfs/js-ipfs/issues/19).
+            - [ ] py-libp2p-random-walk[JS Impl](https://github.com/diasdavid/js-libp2p-random-walk). [JS discussion issue](https://github.com/ipfs/js-ipfs/issues/20).
+            - [ ] py-libp2p-railing[JS Impl](https://github.com/diasdavid/js-libp2p-railing) _Bootstrap-list_. [JS discussion issue](https://github.com/ipfs/js-ipfs/issues/21).
+        - [ ] Swarm.
+            - Entry point, for now let's call it py-libp2p-swarm. [JS Impl](https://github.com/diasdavid/js-libp2p-swarm). [JS discussion issue](https://github.com/ipfs/js-ipfs/issues/22).
+            - [ ] libp2p-identify [JS implementation](https://github.com/diasdavid/js-libp2p-swarm/tree/master/src/identify).
+            - [ ] libp2p-ping [JS Impl](https://github.com/diasdavid/js-ipfs-ping).
+            - Transports: Links to JS impementations probably not needed if we go with Curio, but there's always time to delete.
+                - [ ] libp2p-tcp [JS Impl](https://github.com/diasdavid/js-libp2p-tcp)
+                - [ ] libp2p-udp [JS Impl](https://github.com/diasdavid/js-libp2p-udp)
+                - [ ] libp2p-udt [JS Impl](https://github.com/diasdavid/js-libp2p-udt)
+                - [ ] libp2p-utp [JS Impl](https://github.com/diasdavid/js-libp2p-utp)
+                - [ ] libp2p-webrtc
+                - [ ] libp2p-cjdns
+            - Upgrades/Crypto channel
+                - [ ] libp2p-tls
+                - [ ] libp2p-secio
+            - Stream Muxing
+                - [ ] py-spdy-stream-muxer [JS Impl](https://github.com/diasdavid/js-spdy-stream-muxer) _stream muxer_. [JS Discussion issue](https://github.com/ipfs/js-ipfs/issues/23).
+                - [ ] libp2p-spdy [JS Impl](https://github.com/diasdavid/js-libp2p-spdy/blob/master/src/index.js) _stream muxer upgrade_
+        - [ ] Distributed Record Store. [JS Discussion issue](https://github.com/ipfs/js-ipfs/issues/25).
+            - [ ] py-libp2p-record [JS Impl](https://github.com/diasdavid/js-libp2p-record) _record (needs MerkleDAG node)_.
+            - [ ] py-libp2p-distributed-record-store [JS Impl](https://github.com/diasdavid/js-libp2p-distributed-record-store).
+            - [ ] py-libp2p-kad-record-store [JS Impl](https://github.com/diasdavid/js-libp2p-kad-record-store) _implements abstract record store_.
 - Exchange
-  - [ ] py-bitswap [JS Impl](https://github.com/diasdavid/js-bitswap). [JS Discussion issue](https://github.com/ipfs/js-ipfs/issues/17).
+    - [ ] py-bitswap [JS Impl](https://github.com/diasdavid/js-bitswap). [JS Discussion issue](https://github.com/ipfs/js-ipfs/issues/17).
 - Supporting modules
-  - [X] [py-multihash](https://github.com/JulienPalard/multihash). [Discussion Issue](https://github.com/ipfs/py-ipfs/issues/13).
-- Spec
-  - [specs/19](https://github.com/ipfs/specs/pull/19).
+    - multihash/multihashing: (see discussion about the [multihash/multihashing distinction](https://github.com/ipfs/py-ipfs/issues/23#issuecomment-158345821) )
+        - [ ] [py-multihashing](https://github.com/JulienPalard/multihash). (note: started as multihash, should be multihashing) [JS Impl](https://github.com/jbenet/js-multihashing) 
+        - [ ] [py-multihash] [Spec](https://github.com/jbenet/multihash). [Discussion Issue](https://github.com/ipfs/py-ipfs/issues/13). [Go Impl](https://github.com/jbenet/go-multihash). [JS Impl](https://github.com/jbenet/js-multihash)
+    - [ ] [python-multiaddr](https://github.com/amstocker/python-multiaddr) [Spec](https://github.com/jbenet/multiaddr) [Go Impl](https://github.com/jbenet/go-multiaddr). [JS Impl](https://github.com/jbenet/js-multiaddr).
+    - [ ] py-multistream [Spec](https://github.com/jbenet/multistream). [JS Impl](https://github.com/diasdavid/js-multistream) _protocol muxer_. [JS Discussion issue](https://github.com/ipfs/js-ipfs/issues/24).
+    - [ ] multicodec
+    - [ ] PeerID - [JS Impl](https://github.com/diasdavid/js-peer-id)
+    - [ ] PeerInfo - [JS Impl](https://github.com/diasdavid/js-peer-info)
+    - [ ] repo
+    - [ ] [py-ipld].
+        - [Spec](https://github.com/ipfs/specs/pull/37). [Discussion](https://github.com/ipfs/go-ipld/issues/8)
+        - [Go Impl.](https://github.com/ipfs/go-ipld)
+        - [JS Impl.](https://github.com/diasdavid/js-ipld)
+- [specs/19](https://github.com/ipfs/specs/pull/19).
 
