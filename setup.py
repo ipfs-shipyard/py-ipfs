@@ -30,7 +30,8 @@ with open(os.path.join(PKG_DIR, 'ipfs', '__init__.py')) as VERSION_FILE:
                  .group(1))
 
 
-with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as README_FILE:
+# The python package index understands .rst but we send it .md anyways.
+with open(os.path.join(os.path.dirname(__file__), 'README.md')) as README_FILE:
     README = README_FILE.read()
 
 
