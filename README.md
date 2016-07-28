@@ -106,7 +106,7 @@ This is the roadmap according to the JS implementation. It has `Peer Routing` in
         - [ ] [py-multihash] [Spec](https://github.com/jbenet/multihash). [Discussion Issue](https://github.com/ipfs/py-ipfs/issues/13). [Go Impl](https://github.com/jbenet/go-multihash). [JS Impl](https://github.com/jbenet/js-multihash)
     - [ ] [python-multiaddr](https://github.com/amstocker/python-multiaddr) [Spec](https://github.com/jbenet/multiaddr) [Go Impl](https://github.com/jbenet/go-multiaddr). [JS Impl](https://github.com/jbenet/js-multiaddr).
     - [ ] py-multistream [Spec](https://github.com/jbenet/multistream). [JS Impl](https://github.com/diasdavid/js-multistream) _protocol muxer_. [JS Discussion issue](https://github.com/ipfs/js-ipfs/issues/24).
-    - [ ] [py-multicodec] (https://github.com/fredthomsen/py-multicodec)
+    - [ ] [py-multicodec](https://github.com/fredthomsen/py-multicodec). [Spec](https://github.com/jbenet/multicodec). [Go Impl](https://github.com/jbenet/go-multicodec)
     - [ ] PeerID - [JS Impl](https://github.com/diasdavid/js-peer-id)
     - [ ] PeerInfo - [JS Impl](https://github.com/diasdavid/js-peer-info)
     - [ ] repo
