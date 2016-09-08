@@ -110,9 +110,6 @@ This is the roadmap according to the JS implementation. It has `Peer Routing` in
     - [ ] PeerID - [JS Impl](https://github.com/diasdavid/js-peer-id)
     - [ ] PeerInfo - [JS Impl](https://github.com/diasdavid/js-peer-info)
     - [ ] repo
-    - [ ] [py-ipld].
-        - [Spec](https://github.com/ipfs/specs/pull/37). [Discussion](https://github.com/ipfs/go-ipld/issues/8)
-        - [Go Impl.](https://github.com/ipfs/go-ipld)
-        - [JS Impl.](https://github.com/diasdavid/js-ipld)
+    - [ ] [py-ipld](https://github.com/bigchaindb/py-ipld). [Spec](https://github.com/ipfs/specs/pull/37). [Discussion](https://github.com/ipfs/go-ipld/issues/8). [Go Impl.](https://github.com/ipfs/go-ipld). [JS Impl.](https://github.com/diasdavid/js-ipld)
 - [specs/19](https://github.com/ipfs/specs/pull/19).
 
