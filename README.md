@@ -1,14 +1,29 @@
+# py-ipfs
+
 ![IPFS Logo] (ipfs.png)
 
-
+[![](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](http://ipn.io)
+[![](https://img.shields.io/badge/project-IPFS-blue.svg?style=flat-square)](http://ipfs.io/)
+[![](https://img.shields.io/badge/freenode-%23ipfs-blue.svg?style=flat-square)](http://webchat.freenode.net/?channels=%23ipfs)
+[![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![Join the chat at https://gitter.im/ipfs/py-ipfs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ipfs/py-ipfs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-# py-ipfs
+> python implementation of ipfs
 
 Python implementation of IPFS, the InterPlanetary File System. Not even
 remotely done yet - check out [# fs1]{https://github.com/ipfs/py-ipfs/issues/1} to join the project.
 
+## Table of Contents
 
+- [Background](#background)
+  - [Organization](#organization)
+- [Install](#install)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [Contribute](#contribute)
+- [License](#license)
+
+## Background
 
 IPFS is a distributed file system that seeks to connect all computing devices
 with the same system of files. In some ways, this is similar to the original
@@ -19,7 +34,7 @@ IPFS could become a new major subsystem of the internet. If built right, it
 could complement or replace HTTP. It could complement or replace even more. It
 sounds crazy. It *is* crazy.
 
-# Organization
+### Organization
 
 This repository contains the Python package `ipfs`, which contains the
 subpackages `block`, `merkledag`, `naming`, and `routing`, which function as
@@ -34,22 +49,15 @@ The repo roughly looks like this::
     ├─ network
     └─ routing
 
-# Contribute
-
-IPFS implementation in Python is a work in progress. As such, there's a few things you can do right now to help out:
-
-  * Go through the modules below and **check out existing issues**. This would be especially useful for modules in active development. Some knowledge of IPFS may be required, as well as the infrasture behind it - for instance, you may need to read up on p2p and more complex operations like muxing to be able to help technically.
-  * **Perform code reviews**. More eyes will help a) speed the project along b) ensure quality and c) reduce possible future bugs.
-  * Take a look at both [go-ipfs](https://github.com/ipfs/go-ipfs) and [js-ipfs](https://github.com/ipfs/js-ipfs) (which we intend to follow to a point), and also at some of the planning repositories or issues: for instance, the libp2p spec [here](https://github.com/ipfs/specs/pull/19). Contributions here that would be most helpful are **top-level comments** about how it should look based on our understanding. Again, the more eyes the better.
-  * **Add tests**. There can never be enough tests.
-  * **Contribute to the [FAQ repository](https://github.com/ipfs/faq/issues)** with any questions you have about IPFS or any of the relevant technology. A good example would be asking, "What is a merkledag tree?". If you don't know a term, odds are someone else doesn't either. Eventually, we should have a good understanding of where we need to improve communications and teaching together to make IPFS and IPN better.
-  * TODO: write our own `CONTRIBUTE.md` similar to [IPFS's](https://github.com/ipfs/ipfs/blob/master/CONTRIBUTE.md) and once we know what we're doing and who's doing it. 
-
-# Usage
+## Install
 
 > **Not ready for prime time yet**
 
-# Roadmap
+## Usage
+
+> **Also not ready for prime time yet**
+
+## Roadmap
 
 Note: this has been lifted wholesale from [js-ipfs](https://github.com/ipfs/js-ipfs) and only lightly edited. As such, it may still contain inconsistencies until further editing.
 
@@ -113,3 +121,18 @@ This is the roadmap according to the JS implementation. It has `Peer Routing` in
     - [ ] [py-ipld](https://github.com/bigchaindb/py-ipld). [Spec](https://github.com/ipfs/specs/pull/37). [Discussion](https://github.com/ipfs/go-ipld/issues/8). [Go Impl.](https://github.com/ipfs/go-ipld). [JS Impl.](https://github.com/diasdavid/js-ipld)
 - [specs/19](https://github.com/ipfs/specs/pull/19).
 
+
+## Contribute
+
+IPFS implementation in Python is a work in progress. As such, there's a few things you can do right now to help out:
+
+  * Go through the modules below and **check out existing issues**. This would be especially useful for modules in active development. Some knowledge of IPFS may be required, as well as the infrasture behind it - for instance, you may need to read up on p2p and more complex operations like muxing to be able to help technically.
+  * **Perform code reviews**. More eyes will help a) speed the project along b) ensure quality and c) reduce possible future bugs.
+  * Take a look at both [go-ipfs](https://github.com/ipfs/go-ipfs) and [js-ipfs](https://github.com/ipfs/js-ipfs) (which we intend to follow to a point), and also at some of the planning repositories or issues: for instance, the libp2p spec [here](https://github.com/ipfs/specs/pull/19). Contributions here that would be most helpful are **top-level comments** about how it should look based on our understanding. Again, the more eyes the better.
+  * **Add tests**. There can never be enough tests.
+  * **Contribute to the [FAQ repository](https://github.com/ipfs/faq/issues)** with any questions you have about IPFS or any of the relevant technology. A good example would be asking, "What is a merkledag tree?". If you don't know a term, odds are someone else doesn't either. Eventually, we should have a good understanding of where we need to improve communications and teaching together to make IPFS and IPN better.
+  * TODO: write our own `CONTRIBUTE.md` similar to [IPFS's](https://github.com/ipfs/ipfs/blob/master/CONTRIBUTE.md) and once we know what we're doing and who's doing it. 
+
+## License
+
+[MIT](LICENSE)
