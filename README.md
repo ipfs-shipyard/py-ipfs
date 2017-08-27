@@ -1,6 +1,6 @@
 # py-ipfs
 
-![IPFS Logo] (ipfs.png)
+![IPFS Logo](ipfs.png)
 
 [![](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](http://ipn.io)
 [![](https://img.shields.io/badge/project-IPFS-blue.svg?style=flat-square)](http://ipfs.io/)
@@ -11,7 +11,7 @@
 > python implementation of ipfs
 
 Python implementation of IPFS, the InterPlanetary File System. Not even
-remotely done yet - check out [# fs1]{https://github.com/ipfs/py-ipfs/issues/1} to join the project.
+remotely done yet - check out [# fs1](https://github.com/ipfs/py-ipfs/issues/1) to join the project.
 
 ## Table of Contents
 
