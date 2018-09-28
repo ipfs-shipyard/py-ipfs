@@ -6,7 +6,6 @@
 [![](https://img.shields.io/badge/project-IPFS-blue.svg?style=flat-square)](http://ipfs.io/)
 [![](https://img.shields.io/badge/freenode-%23ipfs-blue.svg?style=flat-square)](http://webchat.freenode.net/?channels=%23ipfs)
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
-[![Join the chat at https://gitter.im/ipfs/py-ipfs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ipfs/py-ipfs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 > python implementation of ipfs
 
