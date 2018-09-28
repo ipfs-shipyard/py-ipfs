@@ -84,7 +84,7 @@ This is the roadmap according to the JS implementation. It has `Peer Routing` in
         - [JS Impl](https://github.com/diasdavid/js-merkledag-store).
 - Network
     - [ ] The `libp2p-website` [is the spec](https://github.com/diasdavid/libp2p-website), but for now the place to go is the [roadmap readme](https://github.com/diasdavid/go-libp2p/blob/docs/roadmap/README.md) in the `go-libp2p` docs.
-    - [ ] [py-libp2p](https://github.com/ipfs/py-ipfs/py-libp2p) _(the entry point)_.
+    - [ ] py-libp2p _(the entry point)_.
         - Peer Routing
             - [ ] mDNS-routing
             - [ ] py-libp2p-kad-routing [JS Impl](https://github.com/diasdavid/js-libp2p-kad-routing). [JS discussion issue](https://github.com/ipfs/js-ipfs/issues/18).
