@@ -19,6 +19,7 @@ remotely done yet - check out [# fs1](https://github.com/ipfs/py-ipfs/issues/1) 
   - [Organization](#organization)
 - [Install](#install)
 - [Usage](#usage)
+- [Documentation](#documentation)
 - [Roadmap](#roadmap)
 - [Contribute](#contribute)
 - [License](#license)
@@ -41,7 +42,7 @@ subpackages `block`, `merkledag`, `naming`, and `routing`, which function as
 laid out in [the main IPFS repo](http://github.com/ipfs/ipfs)
 
 The repo roughly looks like this::
-    
+
     ipfs
     ├─ block
     ├─ merkledag
@@ -57,6 +58,13 @@ The repo roughly looks like this::
 
 > **Also not ready for prime time yet**
 
+## Documentation
+
+To build the Sphinx docs, execute:
+```shell
+$ make -C docs/ <your favorite docs format> # html, pdf etc.
+```
+
 ## Roadmap
 
 Note: this has been lifted wholesale from [js-ipfs](https://github.com/ipfs/js-ipfs) and only lightly edited. As such, it may still contain inconsistencies until further editing.
@@ -67,12 +75,12 @@ TODO:
 - Create and link discussion issues at least for each top level.
 - Remove JS discussion issues when no longer needed.
 
-This is the roadmap according to the JS implementation. It has `Peer Routing` inside the `Network` hierarchy. The above organization has both at the same level. It also has the `Distributed Record Store` inside `Network`, while our organization diagram also has it at first level. TODO: harmonise? 
+This is the roadmap according to the JS implementation. It has `Peer Routing` inside the `Network` hierarchy. The above organization has both at the same level. It also has the `Distributed Record Store` inside `Network`, while our organization diagram also has it at first level. TODO: harmonise?
 
 - Block
 - MerkleDAG
     - [ ] MerkleDAG Python implementation (needs IPLD).
-        - [ ] [py-merkledag-store] No spec yet. 
+        - [ ] [py-merkledag-store] No spec yet.
         - [Go Impl](https://github.com/ipfs/go-ipfs/blob/master/merkledag/merkledag.go)
         - [JS Impl](https://github.com/diasdavid/js-merkledag-store).
 - Network
@@ -110,7 +118,7 @@ This is the roadmap according to the JS implementation. It has `Peer Routing` in
     - [ ] py-bitswap [JS Impl](https://github.com/diasdavid/js-bitswap). [JS Discussion issue](https://github.com/ipfs/js-ipfs/issues/17).
 - Supporting modules
     - multihash/multihashing: (see discussion about the [multihash/multihashing distinction](https://github.com/ipfs/py-ipfs/issues/23#issuecomment-158345821))
-        - [ ] [py-multihashing](https://github.com/JulienPalard/multihash) (note: started as multihash, should be multihashing) [JS Impl](https://github.com/jbenet/js-multihashing) 
+        - [ ] [py-multihashing](https://github.com/JulienPalard/multihash) (note: started as multihash, should be multihashing) [JS Impl](https://github.com/jbenet/js-multihashing)
         - [ ] [py-multihash] [Spec](https://github.com/jbenet/multihash). [Discussion Issue](https://github.com/ipfs/py-ipfs/issues/13). [Go Impl](https://github.com/jbenet/go-multihash). [JS Impl](https://github.com/jbenet/js-multihash)
     - [ ] [python-multiaddr](https://github.com/amstocker/python-multiaddr) [Spec](https://github.com/jbenet/multiaddr) [Go Impl](https://github.com/jbenet/go-multiaddr). [JS Impl](https://github.com/jbenet/js-multiaddr).
     - [ ] py-multistream [Spec](https://github.com/jbenet/multistream). [JS Impl](https://github.com/diasdavid/js-multistream) _protocol muxer_. [JS Discussion issue](https://github.com/ipfs/js-ipfs/issues/24).
@@ -131,7 +139,7 @@ IPFS implementation in Python is a work in progress. As such, there's a few thin
   * Take a look at both [go-ipfs](https://github.com/ipfs/go-ipfs) and [js-ipfs](https://github.com/ipfs/js-ipfs) (which we intend to follow to a point), and also at some of the planning repositories or issues: for instance, the libp2p spec [here](https://github.com/libp2p/specs). Contributions here that would be most helpful are **top-level comments** about how it should look based on our understanding. Again, the more eyes the better.
   * **Add tests**. There can never be enough tests.
   * **Contribute to the [FAQ repository](https://github.com/ipfs/faq/issues)** with any questions you have about IPFS or any of the relevant technology. A good example would be asking, "What is a merkledag tree?". If you don't know a term, odds are someone else doesn't either. Eventually, we should have a good understanding of where we need to improve communications and teaching together to make IPFS and IPN better.
-  * TODO: write our own `CONTRIBUTE.md` similar to [IPFS's](https://github.com/ipfs/ipfs/blob/master/CONTRIBUTE.md) and once we know what we're doing and who's doing it. 
+  * TODO: write our own `CONTRIBUTE.md` similar to [IPFS's](https://github.com/ipfs/ipfs/blob/master/CONTRIBUTE.md) and once we know what we're doing and who's doing it.
 
 Please be aware that all interactions related to multiformats are subject to the IPFS [Code of Conduct](https://github.com/ipfs/community/blob/master/code-of-conduct.md).
 
