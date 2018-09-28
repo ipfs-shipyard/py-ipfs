@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import os
 import re
 import sys
@@ -44,16 +45,15 @@ setuptools.setup(
     version=VERSION,
     packages=setuptools.find_packages(),
     tests_require=['pytest'],
-    install_requires=['six'],
+    python_requires='>=3.4',
     cmdclass={'test': PyTest},
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 1 - Planning',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
         'Operating System :: POSIX',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
