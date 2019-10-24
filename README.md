@@ -18,11 +18,9 @@ For the current status, and where you can help, please see [issue 49](https://gi
 ## Table of Contents
 
 - [Background](#background)
-<!--  - [Organization](#organization) -->
 - [Install](#install)
 - [Usage](#usage)
 - [Documentation](#documentation)
-<!-- - [Roadmap](#roadmap) -->
 - [Contribute](#contribute)
 - [License](#license)
 
