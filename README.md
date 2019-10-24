@@ -2,13 +2,13 @@
 
 ![IPFS Logo](ipfs.png)
 
-[![](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](http://ipn.io)
+![Made by the IPFS Community](https://img.shields.io/badge/made%20by-IPFS%20Community-blue.svg?style=flat-square)
 [![](https://img.shields.io/badge/project-IPFS-blue.svg?style=flat-square)](http://ipfs.io/)
 [![IRC #py-ipfs on chat.freenode.net](https://img.shields.io/badge/freenode%20IRC-%23py--ipfs-blue.svg?style=flat-square)](http://webchat.freenode.net/?channels=%23py-ipfs)
 [![Matrix #py-ipfs:ninetailed.ninja](https://img.shields.io/matrix/py-ipfs:ninetailed.ninja?color=blue&label=matrix+chat&style=flat-square)](https://matrix.to/#/#py-ipfs:ninetailed.ninja?via=ninetailed.ninja&via=librem.one)
-[![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![Standard README Compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-> python implementation of ipfs
+> Python implementation of iIPFS
 
 Python implementation of IPFS, the InterPlanetary File System. **Not even
 remotely done yet.**
@@ -18,11 +18,11 @@ For the current status, and where you can help, please see [issue 49](https://gi
 ## Table of Contents
 
 - [Background](#background)
-  - [Organization](#organization)
+<!--  - [Organization](#organization) -->
 - [Install](#install)
 - [Usage](#usage)
 - [Documentation](#documentation)
-- [Roadmap](#roadmap)
+<!-- - [Roadmap](#roadmap) -->
 - [Contribute](#contribute)
 - [License](#license)
 
