@@ -2,12 +2,13 @@
 
 ![IPFS Logo](ipfs.png)
 
-[![](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](http://ipn.io)
+![Made by the IPFS Community](https://img.shields.io/badge/made%20by-IPFS%20Community-blue.svg?style=flat-square)
 [![](https://img.shields.io/badge/project-IPFS-blue.svg?style=flat-square)](http://ipfs.io/)
-[![](https://img.shields.io/badge/freenode-%23ipfs-blue.svg?style=flat-square)](http://webchat.freenode.net/?channels=%23ipfs)
-[![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![IRC #py-ipfs on chat.freenode.net](https://img.shields.io/badge/freenode%20IRC-%23py--ipfs-blue.svg?style=flat-square)](http://webchat.freenode.net/?channels=%23py-ipfs)
+[![Matrix #py-ipfs:ninetailed.ninja](https://img.shields.io/matrix/py-ipfs:ninetailed.ninja?color=blue&label=matrix+chat&style=flat-square)](https://matrix.to/#/#py-ipfs:ninetailed.ninja?via=ninetailed.ninja&via=librem.one)
+[![Standard README Compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-> python implementation of ipfs
+> Python implementation of IPFS
 
 Python implementation of IPFS, the InterPlanetary File System. **Not even
 remotely done yet.**
@@ -17,11 +18,9 @@ For the current status, and where you can help, please see [issue 49](https://gi
 ## Table of Contents
 
 - [Background](#background)
-  - [Organization](#organization)
 - [Install](#install)
 - [Usage](#usage)
 - [Documentation](#documentation)
-- [Roadmap](#roadmap)
 - [Contribute](#contribute)
 - [License](#license)
 
@@ -36,6 +35,7 @@ IPFS could become a new major subsystem of the internet. If built right, it
 could complement or replace HTTP. It could complement or replace even more. It
 sounds crazy. It *is* crazy.
 
+<!--
 ### Organization
 
 This repository contains the Python package `ipfs`, which contains the
@@ -50,6 +50,7 @@ The repo roughly looks like this::
     ├─ naming
     ├─ network
     └─ routing
+-->
 
 ## Install
 
@@ -66,6 +67,7 @@ To build the Sphinx docs, execute:
 $ make -C docs/ <your favorite docs format> # html, pdf etc.
 ```
 
+<!--
 ## Roadmap
 
 Note: This is based on the roadmap from [js-ipfs](https://github.com/ipfs/js-ipfs) . As such, it may still contain inconsistencies until further editing.
@@ -107,13 +109,16 @@ Note: This is based on the roadmap from [js-ipfs](https://github.com/ipfs/js-ipf
     - [ ] [py-multistream-select](https://github.com/dheatovwil/py-multistream-select) [Spec](https://github.com/jbenet/multistream). [JS Impl](https://github.com/diasdavid/js-multistream) _protocol muxer_. [JS Discussion issue](https://github.com/ipfs/js-ipfs/issues/24).
     - [X] [py-multicodec](https://github.com/multiformats/py-multicodec). [Spec](https://github.com/jbenet/multicodec). [Go Impl](https://github.com/jbenet/go-multicodec)
     - [ ] [py-ipld](https://github.com/ipld/py-ipld-dag). [Spec](https://github.com/ipfs/specs/pull/37). [Discussion](https://github.com/ipfs/go-ipld/issues/8). [Go Impl.](https://github.com/ipfs/go-ipld). [JS Impl.](https://github.com/diasdavid/js-ipld)
+-->
 
 
 ## Contribute
 
 IPFS implementation in Python is a work in progress. As such, there's a few things you can do right now to help out:
 
-  * Check out [issue 49](https://github.com/ipfs/py-ipfs/issues/49) for an up-to-date list (maintained by @alexander255) of tasks that could use your help. Feel free to ask questions on that and we'll try to help. Be sure to drop a note if there is anything you'd like to work on and we'll update the issue to let others know.
+  * Get in touch! You can find us on [#py-ipfs on chat.freenode.org](http://webchat.freenode.net/?channels=%23py-ipfs)!
+     * A [Matrix chat option](https://matrix.to/#/#py-ipfs:ninetailed.ninja?via=ninetailed.ninja&via=librem.one) is also provided. Please note however that, at the time of writing, the default `matrix.org` server is severely overloaded and your messages may only arrive with extreme delay; using a different homeserver is hence highly recommended.
+  * **Check out [issue 49](https://github.com/ipfs/py-ipfs/issues/49) for an up-to-date list** (maintained by @alexander255) **of tasks** that could use your help. Feel free to ask questions on that and we'll try to help. Be sure to drop a note if there is anything you'd like to work on and we'll update the issue to let others know.
   * **Perform code reviews**. More eyes will help a) speed the project along b) ensure quality and c) reduce possible future bugs.
   * Take a look at both [go-ipfs](https://github.com/ipfs/go-ipfs) and [js-ipfs](https://github.com/ipfs/js-ipfs) (which we intend to follow to a point), and also at some of the planning repositories or issues: for instance, the libp2p spec [here](https://github.com/libp2p/specs). Contributions here that would be most helpful are **top-level comments** about how it should look based on our understanding. Again, the more eyes the better.
   * **Add tests**. There can never be enough tests.
