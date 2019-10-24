@@ -8,7 +8,7 @@
 [![Matrix #py-ipfs:ninetailed.ninja](https://img.shields.io/matrix/py-ipfs:ninetailed.ninja?color=blue&label=matrix+chat&style=flat-square)](https://matrix.to/#/#py-ipfs:ninetailed.ninja?via=ninetailed.ninja&via=librem.one)
 [![Standard README Compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-> Python implementation of iIPFS
+> Python implementation of IPFS
 
 Python implementation of IPFS, the InterPlanetary File System. **Not even
 remotely done yet.**
